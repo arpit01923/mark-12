@@ -7,17 +7,16 @@ var output = document.querySelector(".c5");
 function angle() {
     if ((input1.value != "") && (input2.value != "") && (input3.value != ""))
      {
-        var a = input1.value;
-        var b = input2.value;
-        var c = input3.value;
+        var a = parseInt(input1.value);
+        var b = parseInt(input2.value);
+        var c = parseInt(input3.value);
         var sum = a + b + c;
-        console.log(sum);
-        /*if (form == 180) {
-            output.innerText = "Forms a triangle";
+        if (sum == 180) {
+            output.innerText = "Form a triangle";
         }
         else {
             output.innerText = "Do not form a triangle";
-        }*/
+        }
     }
     else
     {
