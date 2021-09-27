@@ -10,11 +10,6 @@ function clickHandler(){
     var formResult=new FormData(quizForm)
     for(var value of formResult.values())
     {
-        if(value == correctAns[""])
-        {
-            alert("Something is wrong");
-            break;
-        }
         if(value == correctAns[index]){
             score=score+1;
         }
