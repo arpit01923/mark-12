@@ -5,7 +5,11 @@ var btn = document.querySelector(".c3");
 var output = document.querySelector(".c5");
 
 function angle() {
-    if ((input1.value != "") && (input2.value != "") && (input3.value != ""))
+    if((input1.value <= 0) || (input2.value <= 0) || (input3.value <= 0)){
+        output.innerText= "Sides are not valid";
+    }
+    else {
+        if ((input1.value != "") && (input2.value != "") && (input3.value != ""))
      {
         var a = parseInt(input1.value);
         var b = parseInt(input2.value);
@@ -18,9 +22,6 @@ function angle() {
             output.innerText = "Do not form a triangle";
         }
     }
-    else
-    {
-        alert("Something went wrong. Try again")
-    }
+}
 }
 btn.addEventListener("click", angle);
