@@ -4,15 +4,17 @@ var btn=document.querySelector(".c3");
 var output=document.querySelector(".c4");
 
 function answer(){
-    if((input1.value != "")&&(input2.value != "")){
-    var a=input1.value;
-    var b=input2.value;
-    var sum=(a*a)+(b*b);
-    var c=Math.sqrt(sum);
-    output.innerText=c;
+    if((input1.value <= 0)||(input2.value <= 0)){
+        output.innerText="There is an error in input";
 }
     else{
-     alert("Something went wrong. Try again")
+        if((input1.value != "")&&(input2.value != "")){
+            var a=input1.value;
+            var b=input2.value;
+            var sum=(a*a)+(b*b);
+            var c=parseInt(Math.sqrt(sum));
+            output.innerText=c;
+        }
     }
 }
 
