@@ -2,7 +2,7 @@ var quizForm=document.querySelector(".quiz-form")
 var btn=document.querySelector(".submit")
 var output1=document.querySelector(".output")
 
-var correctAns=["45","right angled","obtuse","acute"]
+var correctAns=["45","right angled","obtuse","acute","30","180"]
 
 function clickHandler(){
     var score=0;

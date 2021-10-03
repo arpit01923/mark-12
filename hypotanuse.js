@@ -12,8 +12,8 @@ function answer(){
             var a=input1.value;
             var b=input2.value;
             var sum=(a*a)+(b*b);
-            var c=parseInt(Math.sqrt(sum));
-            output.innerText=c;
+            var c=Math.sqrt(sum);
+            output.innerText=c.toFixed(2);
         }
     }
 }
